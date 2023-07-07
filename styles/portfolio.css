@@ -111,6 +111,10 @@ main {
     margin: 0 auto;
 }
 
+main section {
+    margin-top: 130px;
+}
+
 /* about style */
 .about {
     padding: 130px;
@@ -126,4 +130,69 @@ main {
 
 .about-info {
     text-align: center;
+}
+
+/* skill style */
+#what-i-do-para {
+    padding: 30px 150px;
+}
+
+.skills-container {
+    display: flex;
+    gap: 24px;
+}
+
+.skill {
+    padding: 30px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+
+.skill-para {
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* resume style */
+.resume-column-title {
+    color: #474747;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.resume-container {
+    display: flex;
+    gap: 71px;
+}
+
+.resume-item-title {
+    color: #474747;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.resume-item-institution {
+    color: #757575;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.resume-item-para {
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.resume-container hr {
+    margin: 30px 0;
+}
+
+.download-cv {
+    text-align: center;
+    margin-top: 50px;
 }
