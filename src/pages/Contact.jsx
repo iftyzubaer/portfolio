@@ -13,7 +13,7 @@ function Contact() {
             {/* Contact Form */}
             <form className="space-y-6">
             <div>
-                <label className="block text-sm font-medium mb-2">Name</label>
+                <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
                 <input 
                 type="text"
                 className="w-full bg-light-surface dark:bg-dark-surface p-6 rounded-lg border border-light-text-secondary/20 dark:border-dark-text-secondary/20 hover:border-accent-blue/50 transition-colors rounded-lg px-4 py-3 focus:outline-none focus:border-accent-blue"
@@ -22,7 +22,7 @@ function Contact() {
             </div>
             
             <div>
-                <label className="block text-sm font-medium mb-2">Email</label>
+                <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
                 <input 
                 type="email"
                 className="w-full bg-light-surface dark:bg-dark-surface p-6 rounded-lg border border-light-text-secondary/20 dark:border-dark-text-secondary/20 hover:border-accent-blue/50 transition-colors rounded-lg px-4 py-3 focus:outline-none focus:border-accent-blue"
@@ -31,7 +31,7 @@ function Contact() {
             </div>
             
             <div>
-                <label className="block text-sm font-medium mb-2">Message</label>
+                <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
                 <textarea 
                 rows="5"
                 className="w-full bg-light-surface dark:bg-dark-surface p-6 rounded-lg border border-light-text-secondary/20 dark:border-dark-text-secondary/20 hover:border-accent-blue/50 transition-colors rounded-lg px-4 py-3 focus:outline-none focus:border-accent-blue resize-none"
