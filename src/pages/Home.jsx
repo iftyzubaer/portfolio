@@ -1,4 +1,10 @@
 import PageTransition from "../components/PageTransition.jsx";
+import About from "./About.jsx";
+import BeyondCode from "./BeyondCode.jsx";
+import Projects from "./Projects.jsx";
+import TechStack from "./TechStack.jsx";
+import Education from "./Education.jsx";
+import Contact from "./Contact.jsx";
 
 function Home() {
   return (
@@ -20,6 +26,13 @@ function Home() {
             </p>
         </div>
         </div>
+
+        <About />
+        <TechStack />
+        <Projects />
+        <BeyondCode />
+        <Education />
+        <Contact />
     </PageTransition>
   )
 }

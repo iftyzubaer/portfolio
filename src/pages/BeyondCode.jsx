@@ -35,7 +35,7 @@ function BeyondCode() {
             {experiences.map((exp) => (
                 <div 
                 key={exp.id}
-                className="bg-dark-surface p-6 rounded-lg border border-dark-text-secondary/20"
+                className="bg-light-surface dark:bg-dark-surface p-6 rounded-lg border border-light-text-secondary/20 dark:border-dark-text-secondary/20 hover:border-accent-blue/50 transition-colors"
                 >
                 <div className="flex items-start gap-4">
                     <span className="text-4xl">{exp.icon}</span>

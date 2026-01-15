@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { ThemeProvider } from './context/ThemeContext'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
 import TechStack from './pages/TechStack'
@@ -13,10 +14,10 @@ function App() {
   return (
     <ThemeProvider>
       <Router>
-        <div className="min-h-screen bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text transition-colors duration-300">
+        <div className="min-h-screen bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text transition-colors duration-300 flex flex-col">
           <Navbar />
           
-          <div className="pt-16">
+          <div className="pt-16 flex-grow">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
@@ -27,6 +28,8 @@ function App() {
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </div>
+          
+          <Footer />
         </div>
       </Router>
     </ThemeProvider>
