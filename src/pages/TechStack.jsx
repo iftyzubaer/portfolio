@@ -8,7 +8,7 @@ function TechStack() {
     },
     {
       category: "Frontend",
-      techs: ["HTML5", "CSS3", "JavaScript", "TailwindCSS", "DaisyUI", "React Native"]
+      techs: ["HTML5", "CSS3", "JavaScript", "TailwindCSS", "DaisyUI", "React Native", "Framer Motion"]
     },
     {
       category: "Backend & Database",
@@ -16,15 +16,15 @@ function TechStack() {
     },
     {
       category: "Languages",
-      techs: ["JavaScript", "Python", "Java (OOP)", "SQL"]
+      techs: ["JavaScript", "Python", "Java (OOP)", "C"]
     },
     {
       category: "Tools & Platforms",
-      techs: ["Git", "GitHub", "VS Code", "Netlify", "Vercel", "React Query"]
+      techs: ["Git", "GitHub", "VS Code", "Netlify", "Vercel"]
     },
     {
       category: "Other Skills",
-      techs: ["Adobe Premiere Pro", "Canva", "Microsoft Office"]
+      techs: ["Adobe Premiere Pro", "Canva", "Microsoft Office", "Agile Methodologies"]
     }
   ]
 
@@ -38,8 +38,8 @@ function TechStack() {
           </p>
           
           <div className="grid md:grid-cols-2 gap-8">
-            {techCategories.map((category, index) => (
-              <div key={index} className="bg-light-surface dark:bg-dark-surface p-6 rounded-lg border border-light-text-secondary/20 dark:border-dark-text-secondary/20">
+            {techCategories.map((category) => (
+              <div key={category.category} className="bg-light-surface dark:bg-dark-surface p-6 rounded-lg border border-light-text-secondary/20 dark:border-dark-text-secondary/20">
                 <h2 className="font-heading text-2xl mb-4 text-accent-blue">
                   {category.category}
                 </h2>

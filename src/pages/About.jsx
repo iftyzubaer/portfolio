@@ -25,8 +25,8 @@ function About() {
             </p>
             
             <p className="text-light-text-secondary dark:text-dark-text-secondary">
-              Beyond the screen, I've led teams as President of Interact Club, served as a board member 
-              in BNCC, competed in business challenges, and won Excel competitions. I believe that 
+              Beyond the screen, I've led teams as President of Interact Club, served as a Lance Corporal 
+              in BNCC, competed in business competitions, and won Excel competitions. I believe that 
               leadership, curiosity, and technical skill aren't separate—they're threads of the same story.
             </p>
             
