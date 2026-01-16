@@ -3,6 +3,7 @@ import PageTransition from '../components/PageTransition'
 function Education() {
   const journey = [
     {
+      id: "bsc-software-engineering",
       year: "2024 - Present",
       title: "BSc in Software Engineering and Management",
       institution: "Göteborg Universitet x Chalmers tekniska högskola",
@@ -10,6 +11,7 @@ function Education() {
       location: "Gothenburg, Sweden"
     },
     {
+      id: "hsc-science",
       year: "2024",
       title: "Higher Secondary Certificate (HSC) in Science",
       institution: "Dhaka Commerce College",
@@ -17,6 +19,7 @@ function Education() {
       location: "Dhaka, Bangladesh"
     },
     {
+      id: "ssc-science",
       year: "2022",
       title: "Secondary School Certificate (SSC) in Science",
       institution: "Monipur High School & College, Branch-1",
@@ -24,6 +27,7 @@ function Education() {
       location: "Dhaka, Bangladesh"
     },
     {
+      id: "self-taught-web-dev",
       year: "2020 - Present",
       title: "Self-Taught Web Development",
       institution: "Online Learning & Practice",
@@ -46,8 +50,8 @@ function Education() {
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent-blue via-accent-purple to-accent-amber"></div>
             
             <div className="space-y-12">
-              {journey.map((item, index) => (
-                <div key={index} className="relative pl-20">
+              {journey.map((item) => (
+                <div key={item.id} className="relative pl-20">
                   {/* Timeline dot */}
                   <div className="absolute left-6 top-2 w-5 h-5 rounded-full bg-accent-blue border-4 border-light-bg dark:border-dark-bg"></div>
                   
