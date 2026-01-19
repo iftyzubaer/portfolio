@@ -24,7 +24,7 @@ function Projects() {
     },
     {
       id: 3,
-      title: "Java OOP Project",
+      title: "Mooziq",
       description: "An implementation of the Mooziq App for the course DIT009 - Fundamentals of Programming. This project demonstrates procedural programming concepts in Python through features such as artist and album data retrieval, CSV data export, lyric analysis, weather forecasting for concerts, and song lyric search.",
       tags: ["Python", "Data Processing", "CSV"],
       category: ["Academic Project", "Console Application"],
