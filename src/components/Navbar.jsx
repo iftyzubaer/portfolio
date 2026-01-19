@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useTheme } from '../context/ThemeContext'
 import { useState } from 'react'
+import { FaSun, FaMoon, FaBars, FaTimes } from 'react-icons/fa'
 
 function Navbar() {
   const { isDark, toggleTheme } = useTheme()
@@ -23,7 +24,7 @@ function Navbar() {
             IZ
           </Link>
           
-          {/* Desktop Navigation - Simplified */}
+          {/* Desktop Navigation */}
           <div className="hidden md:flex gap-8 items-center">
             <Link to="/" className="font-body hover:text-accent-blue transition-colors">
               Home
@@ -41,10 +42,10 @@ function Navbar() {
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
-              className="ml-4 p-2 rounded-lg bg-accent-blue/10 hover:bg-accent-blue/20 transition-colors"
+              className="ml-4 p-2 rounded-lg bg-accent-blue/10 hover:bg-accent-blue/20 transition-all hover:scale-110"
               aria-label="Toggle theme"
             >
-              {isDark ? '☀️' : '🌙'}
+              {isDark ? <FaSun className="text-lg text-accent-amber" /> : <FaMoon className="text-lg text-accent-blue" />}
             </button>
           </div>
           
@@ -52,23 +53,23 @@ function Navbar() {
           <div className="md:hidden flex items-center gap-4">
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-lg bg-accent-blue/10 hover:bg-accent-blue/20 transition-colors"
+              className="p-2 rounded-lg bg-accent-blue/10 hover:bg-accent-blue/20 transition-all hover:scale-110"
               aria-label="Toggle theme"
             >
-              {isDark ? '☀️' : '🌙'}
+              {isDark ? <FaSun className="text-lg text-accent-amber" /> : <FaMoon className="text-lg text-accent-blue" />}
             </button>
             
             <button
               onClick={toggleMenu}
-              className="p-2 rounded-lg bg-accent-blue/10 hover:bg-accent-blue/20 transition-colors"
+              className="p-2 rounded-lg bg-accent-blue/10 hover:bg-accent-blue/20 transition-all hover:scale-110"
               aria-label="Toggle menu"
             >
-              {isMenuOpen ? '✕' : '☰'}
+              {isMenuOpen ? <FaTimes className="text-lg" /> : <FaBars className="text-lg" />}
             </button>
           </div>
         </div>
         
-        {/* Mobile Menu - Simplified */}
+        {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-4">
             <Link to="/" className="block font-body hover:text-accent-blue transition-colors" onClick={closeMenu}>

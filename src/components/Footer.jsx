@@ -1,3 +1,6 @@
+import { FaGithub, FaLinkedin, FaEnvelope, FaReact } from 'react-icons/fa'
+import { SiTailwindcss } from 'react-icons/si'
+
 function Footer() {
   const currentYear = new Date().getFullYear()
   
@@ -10,36 +13,43 @@ function Footer() {
             © {currentYear} Ifty Zubaer. All rights reserved.
           </div>
           
-          {/* Center: Quick Links */}
-          <div className="flex gap-6 text-sm">
+          {/* Center: Social Links */}
+          <div className="flex gap-6">
             <a 
               href="https://github.com/iftyzubaer" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-light-text-secondary dark:text-dark-text-secondary hover:text-accent-blue transition-colors"
+              aria-label="GitHub"
             >
-              GitHub
+              <FaGithub className="text-xl hover:scale-110 transition-transform" />
             </a>
             <a 
               href="https://linkedin.com/in/iftyzubaer/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-light-text-secondary dark:text-dark-text-secondary hover:text-accent-blue transition-colors"
+              aria-label="LinkedIn"
             >
-              LinkedIn
+              <FaLinkedin className="text-xl hover:scale-110 transition-transform" />
             </a>
             <a 
               href="mailto:iftyzubaer1304@gmail.com"
-              target="_blank"
               className="text-light-text-secondary dark:text-dark-text-secondary hover:text-accent-blue transition-colors"
+              aria-label="Email"
             >
-              Email
+              <FaEnvelope className="text-xl hover:scale-110 transition-transform" />
             </a>
           </div>
           
           {/* Right: Built with */}
-          <div className="text-light-text-secondary dark:text-dark-text-secondary text-sm">
-            Built with <span className="text-accent-blue">React</span> & <span className="text-accent-blue">Tailwind CSS</span>
+          <div className="flex items-center gap-2 text-light-text-secondary dark:text-dark-text-secondary text-sm">
+            <span>Built with</span>
+            <FaReact className="text-accent-blue text-lg" />
+            <span className="text-accent-blue">React</span>
+            <span>&</span>
+            <SiTailwindcss className="text-accent-blue text-lg" />
+            <span className="text-accent-blue">Tailwind</span>
           </div>
         </div>
       </div>
