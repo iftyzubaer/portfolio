@@ -1,5 +1,6 @@
 import PageTransition from "../components/PageTransition.jsx";
 import { useState } from 'react'
+import { FaGithub, FaLinkedin, FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa'
 
 function Contact() {
   const [status, setStatus] = useState('')
@@ -25,7 +26,6 @@ function Contact() {
         setStatus('error')
       }
     } catch (error) {
-      console.error('Form submission error:', error)
       setStatus('error')
     }
   }
@@ -95,36 +95,50 @@ function Contact() {
             </button>
           </form>
           
+          {/* Social Links with Icons */}
           <div className="mt-12 text-center">
-            <p className="text-light-text-secondary dark:text-dark-text-secondary mb-4">Or reach out directly:</p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
+            <p className="text-light-text-secondary dark:text-dark-text-secondary mb-6">Or reach out directly:</p>
+            
+            <div className="flex flex-col sm:flex-row justify-center gap-6">
               <a 
                 href="mailto:iftyzubaer1304@gmail.com" 
-                className="text-accent-blue hover:text-accent-amber transition-colors font-medium"
+                className="flex items-center justify-center gap-2 text-accent-blue hover:text-accent-amber transition-colors font-medium group"
               >
-                📧 iftyzubaer1304@gmail.com
+                <FaEnvelope className="text-xl group-hover:scale-110 transition-transform" />
+                <span>iftyzubaer1304@gmail.com</span>
               </a>
+              
               <a 
                 href="https://github.com/iftyzubaer" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-accent-blue hover:text-accent-amber transition-colors font-medium"
+                className="flex items-center justify-center gap-2 text-accent-blue hover:text-accent-amber transition-colors font-medium group"
               >
-                💻 GitHub
+                <FaGithub className="text-xl group-hover:scale-110 transition-transform" />
+                <span>GitHub</span>
               </a>
+              
               <a 
                 href="https://linkedin.com/in/iftyzubaer/" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-accent-blue hover:text-accent-amber transition-colors font-medium"
+                className="flex items-center justify-center gap-2 text-accent-blue hover:text-accent-amber transition-colors font-medium group"
               >
-                💼 LinkedIn
+                <FaLinkedin className="text-xl group-hover:scale-110 transition-transform" />
+                <span>LinkedIn</span>
               </a>
             </div>
-            <p className="text-light-text-secondary dark:text-dark-text-secondary mt-6 text-sm">
-              📍 Based in Gothenburg, Sweden<br/>
-              📞 +46 736778217
-            </p>
+            
+            <div className="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4 text-light-text-secondary dark:text-dark-text-secondary text-sm">
+              <span className="flex items-center gap-2">
+                <FaMapMarkerAlt className="text-accent-blue" />
+                Gothenburg, Sweden
+              </span>
+              <span className="flex items-center gap-2">
+                <FaPhone className="text-accent-blue" />
+                +46 736778217
+              </span>
+            </div>
           </div>
         </div>
       </div>

@@ -6,39 +6,43 @@ function Projects() {
     // For now, I'll create placeholders based on your CV
     {
       id: 1,
-      title: "Full-Stack MERN Application",
-      description: "A complete web application built with MongoDB, Express, React, and Node.js. Features authentication, CRUD operations, and responsive design.",
-      tags: ["React", "Node.js", "MongoDB", "Express", "JWT", "TailwindCSS"],
-      category: "Web Application",
-      github: "https://github.com/iftyzubaer",
-      demo: null
-    },
-    {
-      id: 2,
       title: "Portfolio Website",
-      description: "Personal portfolio showcasing projects and skills. Built with React, Tailwind CSS, and Framer Motion for smooth animations.",
+      description: "A personal portfolio website designed to present my background, skills, and projects in a clean and interactive way. Built using React and Tailwind CSS, with Framer Motion used to add smooth transitions and animations, focusing on responsive design and modern UI practices.",
       tags: ["React", "Tailwind CSS", "Framer Motion"],
       category: "Web Application",
       github: "https://github.com/iftyzubaer/portfolio",
       demo: null
     },
     {
-      id: 3,
-      title: "Terminal-Based Application",
-      description: "Academic project: A command-line application demonstrating OOP principles and data structures.",
-      tags: ["Python", "CLI"],
-      category: "Academic Project"
+      id: 2,
+      title: "PokéNav App",
+      description: "An implementation of the PokéNav App for the course DIT009 - Fundamentals of Programming. This project demonstrates core procedural programming concepts in Python and includes utilities such as hashtag extraction, palindrome detection, Pokémon traits lookup, BMI calculation, and basic statistical analysis.",
+      tags: ["Python", "Procedural Programming"],
+      category: ["Academic Project", "Console Application"],
+      github: "https://github.com/iftyzubaer/pokenav-app",
+      demo: null
     },
     {
-      id: 4,
+      id: 3,
       title: "Java OOP Project",
-      description: "Object-oriented programming project showcasing software design patterns and clean architecture.",
-      tags: ["Java", "OOP"],
-      category: "Academic Project"
-    }
+      description: "An implementation of the Mooziq App for the course DIT009 - Fundamentals of Programming. This project demonstrates procedural programming concepts in Python through features such as artist and album data retrieval, CSV data export, lyric analysis, weather forecasting for concerts, and song lyric search.",
+      tags: ["Python", "Data Processing", "CSV"],
+      category: ["Academic Project", "Console Application"],
+      github: "https://github.com/iftyzubaer/mooziq",
+      demo: null
+    },
+    /* {
+      id: 4,
+      title: "Full-Stack MERN Application",
+      description: "A complete web application built with MongoDB, Express, React, and Node.js. Features authentication, CRUD operations, and responsive design.",
+      tags: ["React", "Node.js", "MongoDB", "Express", "JWT", "TailwindCSS"],
+      category: "Web Application",
+      github: "https://github.com/iftyzubaer",
+      demo: null
+    } */
   ]
 
-  const categories = ["All", "Web Application", "Academic Project", "Personal Software"]
+  /* const categories = ["All", "Web Application", "Academic Project", "Personal Software"] */
   
   return (
     <PageTransition>
@@ -68,7 +72,9 @@ function Projects() {
                 className="bg-light-surface dark:bg-dark-surface p-6 rounded-lg border border-light-text-secondary/20 dark:border-dark-text-secondary/20 hover:border-accent-blue/50 transition-all hover:shadow-lg"
               >
                 <span className="text-xs uppercase tracking-wider text-accent-amber font-medium">
-                  {project.category}
+                  {Array.isArray(project.category)
+                  ? project.category.join(" / ")
+                  : project.category}
                 </span>
                 <h3 className="font-heading text-2xl mt-2 mb-3">{project.title}</h3>
                 <p className="text-light-text-secondary dark:text-dark-text-secondary mb-4 leading-relaxed">
