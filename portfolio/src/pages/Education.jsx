@@ -7,7 +7,7 @@ function Education() {
       year: "2024 - Present",
       title: "BSc in Software Engineering and Management",
       institution: "Göteborg Universitet x Chalmers tekniska högskola",
-      description: "First year student exploring the intersection of software development and business management. Learning Python, Java (OOP), and advanced software engineering principles.",
+      description: "First-year student combining software engineering with technical project management. Completed Python, Java OOP, and discrete mathematics. Led agile development in team-based inventory system project. Currently studying database management (SQL, MongoDB) and requirements engineering.",
       location: "Gothenburg, Sweden"
     },
     {
@@ -23,7 +23,7 @@ function Education() {
       year: "2022",
       title: "Secondary School Certificate (SSC) in Science",
       institution: "Monipur High School & College, Branch-1",
-      description: "Completed with GPA 5.00. Served as Maintenance Executive at Language Club.",
+      description: "Completed with GPA 5.00. Served as Maintenance Executive at Language Club, and Administration Secretary following Senior Advisior at Photography Club.",
       location: "Dhaka, Bangladesh"
     },
     {
