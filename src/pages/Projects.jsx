@@ -15,6 +15,15 @@ function Projects() {
     },
     {
       id: 2,
+      title: "GameHub",
+      description: "A modern game discovery platform built with Next.js 15 and RAWG API. Features server-side rendering, real-time search, and a responsive competitive gaming design.",
+      tags: ["Next.js", "TypeScript", "Tailwind CSS", "RAWG API", "SSR"],
+      category: "Web Application",
+      github: "https://github.com/iftyzubaer/gamehub",
+      demo: "https://gamehub-iftyzubaer.vercel.app"
+    },
+    {
+      id: 3,
       title: "PokéNav App",
       description: "An implementation of the PokéNav App for the course DIT009 - Fundamentals of Programming. This project demonstrates core procedural programming concepts in Python and includes utilities such as hashtag extraction, palindrome detection, Pokémon traits lookup, BMI calculation, and basic statistical analysis.",
       tags: ["Python", "Procedural Programming"],
@@ -23,7 +32,7 @@ function Projects() {
       demo: null
     },
     {
-      id: 3,
+      id: 4,
       title: "Mooziq",
       description: "An implementation of the Mooziq App for the course DIT009 - Fundamentals of Programming. This project demonstrates procedural programming concepts in Python through features such as artist and album data retrieval, CSV data export, lyric analysis, weather forecasting for concerts, and song lyric search.",
       tags: ["Python", "Data Processing", "CSV"],
