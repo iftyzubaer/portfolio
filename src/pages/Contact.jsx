@@ -136,7 +136,7 @@ function Contact() {
               </span>
               <span className="flex items-center gap-2">
                 <FaPhone className="text-accent-blue" />
-                +46 736778217
+                +46 736772817
               </span>
             </div>
           </div>
